@@ -75,7 +75,7 @@ def viewdb():
     return display_html(rows)
 
 # TODO: Section 2 — add your /artistquery/<artist_id> route here
-@app.route('/artistquery/<artist_id')
+@app.route('/artistquery/<artist_id>/')
 def artistquery(artist_id):
     """Displays all tracks by a specific artist"""
     rows = execute_query("""
