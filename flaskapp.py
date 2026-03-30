@@ -85,6 +85,7 @@ def artistquery(artist_id):
         JOIN Track USING (AlbumId)
         WHERE ArtistId = ?
     """, (artist_id,))
+    return display_html(rows)
     
 
 
